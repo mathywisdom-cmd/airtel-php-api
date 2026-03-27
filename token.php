@@ -1,5 +1,8 @@
 <?php
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 require_once "config.php";
 
 $url = "https://openapiuat.airtel.africa/auth/oauth2/token";
@@ -22,6 +25,11 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, [
 
 $response = curl_exec($ch);
 
-curl_close($ch);
+// Show CURL error if exists
+if (curl_errno($ch)) {
+    echo "CURL ERROR: " . curl_error($ch);
+} else {
+    echo "RESPONSE: " . $response;
+}
 
-echo $response;
+curl_close($ch);
