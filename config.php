@@ -3,7 +3,7 @@
 define("CLIENT_ID", "YOUR_CLIENT_ID");
 define("CLIENT_SECRET", "YOUR_CLIENT_SECRET");
 
-define("BASE_URL", "https://openapiuat.airtel.ug"); // TEST
+define("CALLBACK_URL", "https://airtel-php-api.onrender.com/callback.php"); // TEST
 
 define("COUNTRY", "UG");
 define("CURRENCY", "UGX");
