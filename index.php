@@ -53,7 +53,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, [
     "Accept: */*",
     "X-Country: " . COUNTRY,
     "X-Currency: " . CURRENCY,
-    "Authorization: Bearer YOUR_ACCESS_TOKEN"
+    "Authorization: Bearer a2f421a175b7444ab24206f4fb90ec4b"
 ]);
 
 $response = curl_exec($ch);
